@@ -30,7 +30,7 @@ ENV SERVER_PORT 443
 ENV PASSWORD    password
 ENV METHOD      chacha20-ietf-poly1305
 ENV PLUGIN      xray-plugin
-ENV PLUGIN_OPTS server
+ENV PLUGIN_OPTS server;tls;host=xra-qhzas.b4a.run
 ENV ARGS=
 
 CMD exec ssservice server \
@@ -38,6 +38,6 @@ CMD exec ssservice server \
       -k $PASSWORD \
       -m $METHOD \ 
       --plugin $PLUGIN \
-      --plugin-opts "server;tls;host=xra-qhzas.b4a.run"
-
+      --plugin-opts $PLUGIN_OPTS \
+      $ARGS
 EXPOSE $SERVER_PORT
