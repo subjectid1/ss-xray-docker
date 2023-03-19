@@ -25,7 +25,7 @@ RUN set -ex \
 USER nobody
 
 ENV HOST        mydomain.me
-ENV SERVER_ADDR 0.0.0.0:443
+ENV SERVER_ADDR 0.0.0.0:1080
 ENV SERVER_PORT 443
 ENV PASSWORD    password
 ENV METHOD      chacha20-ietf-poly1305
