@@ -30,7 +30,7 @@ ENV SERVER_PORT 443
 ENV PASSWORD    password
 ENV METHOD      chacha20-ietf-poly1305
 ENV PLUGIN      xray-plugin
-ENV PLUGIN_OPTS server;tls;host=xra-qhzas.b4a.run
+ENV PLUGIN_OPTS server
 ENV ARGS=
 
 CMD exec ssservice server \
