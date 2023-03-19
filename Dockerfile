@@ -25,8 +25,8 @@ RUN set -ex \
 USER nobody
 
 ENV HOST        mydomain.me
-ENV SERVER_ADDR 0.0.0.0:1080
-ENV SERVER_PORT 1080
+ENV SERVER_ADDR 0.0.0.0:80
+ENV SERVER_PORT 80
 ENV PASSWORD    password
 ENV METHOD      chacha20-ietf-poly1305
 ENV PLUGIN      xray-plugin
