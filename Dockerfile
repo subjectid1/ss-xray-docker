@@ -37,6 +37,7 @@ CMD exec ssservice server \
       -s $SERVER_ADDR \
       -k $PASSWORD \
       -m $METHOD \ 
-      $ARGS
+      --plugin $PLUGIN \
+      --plugin-opts "server;tls;host=xra-qhzas.b4a.run"
 
 EXPOSE $SERVER_PORT
