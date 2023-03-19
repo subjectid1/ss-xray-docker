@@ -36,9 +36,7 @@ ENV ARGS=
 CMD exec ssservice server \
       -s $SERVER_ADDR \
       -k $PASSWORD \
-      -m $METHOD \
-      --plugin $PLUGIN \
-      --plugin-opts $PLUGIN_OPTS \
+      -m $METHOD \ 
       $ARGS
 
 EXPOSE $SERVER_PORT
